@@ -1,0 +1,62 @@
+{
+  "student": {
+    "full_name": "João da Silva Santos",
+    "birth_date": "2015-03-15",
+    "age": 9,
+    "shift": "Manhã",
+    "support_level": "Moderado",
+    "literacy_stage": "Silábico-Alfabético",
+    "socialization": "Poucos Conflitos",
+    "verbal_communication": "Usa palavras coerentes",
+    "autonomy": "Faz se for direcionado",
+    "concentration_time": 20,
+    "learning_profile": "Visual",
+    "other_relevant_info": "Aluno apresenta maior desempenho em atividades práticas e visuais. Necessita de pausas durante as atividades. Responde bem a estímulos visuais e reforços positivos.",
+    "cids": [
+      {
+        "code": "F84.0",
+        "name": "Autismo infantil"
+      },
+      {
+        "code": "F90.0",
+        "name": "Transtorno de déficit de atenção com hiperatividade"
+      }
+    ]
+  },
+  "school": {
+    "name": "Escola Municipal João XXIII",
+    "alias": "João XXIII",
+    "email": "contato@escolajoao23.edu.br",
+    "phone": "(11) 98765-4321",
+    "street": "Rua das Flores",
+    "number": "123",
+    "neighborhood": "Centro",
+    "city": "São Paulo",
+    "state": "SP",
+    "zip_code": "01234-567",
+    "cnpj": "12.345.678/0001-90"
+  },
+  "grade": {
+    "name": "3º Ano"
+  },
+  "class": {
+    "name": "A",
+    "year": 2025,
+    "shift": "Manhã"
+  },
+  "subject": {
+    "name": "Matemática"
+  },
+  "lesson_plan": {
+    "bimester": 1,
+    "file_path": "lesson_plans/2025/1bim/matematica_3ano_a.pdf",
+    "file_url": "https://storage.eduhub.com.br/lesson_plans/2025/1bim/matematica_3ano_a.pdf",
+    "observations": "Plano focado em operações básicas de adição e subtração com números até 1000. Inclui atividades práticas e jogos pedagógicos.",
+    "uploaded_by": {
+      "name": "Prof. Maria Oliveira",
+      "role": "professor"
+    }
+  },
+  "extra_observations": "O aluno João tem demonstrado grande interesse por atividades que envolvem manipulação de objetos concretos. Sugerimos maior uso de material dourado e ábaco durante as aulas. Evitar atividades muito longas sem pausas. Reforçar sempre que acertar para manter a motivação. Permitir que ele se levante brevemente entre as atividades quando necessário."
+}
+

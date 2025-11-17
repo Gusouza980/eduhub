@@ -1,0 +1,58 @@
+[
+   {
+      "codigo": "F84.0",
+      "nome": "Autismo (Transtorno do Espectro Autista)"
+   },
+   {
+      "codigo": "F90.0",
+      "nome": "TDAH (Transtorno de Déficit de Atenção e Hiperatividade)"
+   },
+   {
+      "codigo": "F81.0",
+      "nome": "Dislexia (Transtorno específico da leitura)"
+   },
+   {
+      "codigo": "F81.2",
+      "nome": "Discalculia (Transtorno específico do cálculo)"
+   },
+   {
+      "codigo": "Q90.9",
+      "nome": "Síndrome de Down, não especificada"
+   },
+   {
+      "codigo": "F91.3",
+      "nome": "Transtorno desafiador opositivo (Oppositional Defiant Disorder)"
+   },
+   {
+      "codigo": "G80.9",
+      "nome": "Paralisia cerebral, não especificada"
+   },
+   {
+      "codigo": "F70-F79",
+      "nome": "Deficiência intelectual (retardo mental)"
+   },
+   {
+      "codigo": "F80.1",
+      "nome": "Transtorno expressivo da linguagem"
+   },
+   {
+      "codigo": "F81.8",
+      "nome": "Disgrafia (outros transtornos do desenvolvimento das habilidades escolares)"
+   },
+   {
+      "codigo": "F82",
+      "nome": "Transtorno do desenvolvimento da coordenação"
+   },
+   {
+      "codigo": "H54",
+      "nome": "Deficiência visual (cegueira e visão subnormal)"
+   },
+   {
+      "codigo": "H90-H91",
+      "nome": "Deficiência auditiva (perda de audição e outros transtornos do ouvido)"
+   },
+   {
+      "codigo": "R69",
+      "nome": "Outro transtorno não especificado"
+   }
+]

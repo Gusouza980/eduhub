@@ -1,0 +1,36 @@
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+
+@source '../../../../app/Filament/**/*';
+@source '../../../../resources/views/filament/**/*';
+
+
+@theme {
+/* Cores customizadas da paleta */
+--royal-purple: #7A48B9;
+--tekhelet: #541E87;
+--eminence: #753279;
+--thistle: #DBCDED;
+--white: #FEFEFE;
+
+/* Tipografia */
+--color-text: #1B1028;
+--color-text-muted: #6B5A88;
+}
+
+.fi-sidebar {
+    &:where(.dark, .dark *) {
+        background-color: rgba(40, 40, 40, 0.15);
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: 0 0 5px 0 rgba(84, 30, 135, 0.6);
+    }
+    &:where(.light, .light *) {
+        background-color: rgba(255, 255, 255, 0.15);
+    }
+    
+}
+
+.fi-sidebar-header {
+    height: auto;
+    padding: 10px 0;
+}
