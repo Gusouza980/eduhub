@@ -4,25 +4,25 @@ WORKDIR /var/www/html
 
 LABEL maintainer="Gusouza980 <gusouza980@gmail.com>"
 
-LABEL description="Laravel 12 + Filament 4 + PostgreSQL Dockerfile"
+LABEL description="Laravel 12 + Filament 4 + MySQL Dockerfile"
 
 # Instala dependências do sistema
 RUN apk add --no-cache \
     zip \
     libzip-dev \
     libpng-dev \
-    libpq-dev \
+    mariadb-dev \
     icu-dev \
     npm \
-    postgresql-client \
+    mariadb-client \
     nginx
 
 # Instala extensões do PHP necessárias para Laravel 12 e Filament 4
 RUN docker-php-ext-install \
     zip \
     gd \
-    pdo_pgsql \
-    pgsql \
+    pdo_mysql \
+    mysqli \
     opcache \
     intl \
     bcmath

@@ -26,13 +26,25 @@ npm run build
 echo "🧹 Cleaning up dev dependencies..."
 npm prune --production
 
-# Aguarda o PostgreSQL estar disponível
-echo "⏳ Waiting for PostgreSQL..."
-until pg_isready -h "${DB_HOST:-pgsql}" -p "${DB_PORT:-5432}" -U "${DB_USERNAME:-laravel}" > /dev/null 2>&1; do
-    echo "PostgreSQL is unavailable - sleeping"
-    sleep 2
-done
-echo "✅ PostgreSQL is up!"
+# Aguarda o MySQL estar disponível
+echo "⏳ Waiting for MySQL..."
+DB_HOST="${DB_HOST:-mysql}"
+DB_PORT="${DB_PORT:-3306}"
+DB_USERNAME="${DB_USERNAME:-root}"
+DB_PASSWORD="${DB_PASSWORD:-}"
+
+if [ -z "$DB_PASSWORD" ]; then
+    until mysqladmin ping -h "$DB_HOST" -P "$DB_PORT" -u "$DB_USERNAME" --silent > /dev/null 2>&1; do
+        echo "MySQL is unavailable - sleeping"
+        sleep 2
+    done
+else
+    until mysqladmin ping -h "$DB_HOST" -P "$DB_PORT" -u "$DB_USERNAME" -p"$DB_PASSWORD" --silent > /dev/null 2>&1; do
+        echo "MySQL is unavailable - sleeping"
+        sleep 2
+    done
+fi
+echo "✅ MySQL is up!"
 
 # Executa migrations
 echo "🗄️  Running database migrations..."
